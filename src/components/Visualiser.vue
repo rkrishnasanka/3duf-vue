@@ -10,17 +10,17 @@
 </template>
 
 <script>
-import BareViewManager from "../../3DuF/src/app/view/bareViewManager"
-import Registry from "../../3DuF/src/app/core/registry"
-import { example2 } from "../../3DuF/src/app/examples/jsonExamples"
+import { Registry, BareViewManager } from "ThreeDuF"
+import { Examples } from "ThreeDuF"
 
     export default {
        mounted() {
+
         let viewManager = new BareViewManager();
 
         Registry.viewManager = viewManager;
 
-        viewManager.loadDeviceFromJSON(JSON.parse(example2));
+        viewManager.loadDeviceFromJSON(JSON.parse(Examples.example2));
         viewManager.updateGrid();
         Registry.currentDevice.updateView();
 

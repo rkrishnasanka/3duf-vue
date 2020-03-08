@@ -1,17 +1,17 @@
 import paper from 'paper';
 
-const Registry = require("./core/registry");
-const Device = require('./core/device');
-const Layer = require('./core/layer');
+import Registry from ("./core/registry")
+import Device from ('./core/device')
+import Layer from ('./core/layer')
 
 import PaperView from "./view/paperView";
 import ViewManager from "./view/viewManager";
 import AdaptiveGrid from "./view/grid/adaptiveGrid";
 
-const PageSetup = require("./view/pageSetup");
-const Colors = require("./view/colors");
-var ThreeDeviceRenderer = require("./view/render3D/ThreeDeviceRenderer");
-var Examples = require("./examples/jsonExamples");
+import PageSetup from ("./view/pageSetup")
+import Colors from ("./view/colors")
+import ThreeDeviceRenderer from "./view/render3D/ThreeDeviceRenderer"
+import Examples from "./examples/jsonExamples"
 let DxfParser = require('dxf-parser');
 
 var viewManager;
