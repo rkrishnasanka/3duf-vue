@@ -12,7 +12,7 @@
 <script>
 import BareViewManager from "../../3DuF/src/app/view/bareViewManager"
 import Registry from "../../3DuF/src/app/core/registry"
-import Examples from "../../3DuF/src/app/examples/jsonExamples"
+import { example2 } from "../../3DuF/src/app/examples/jsonExamples"
 
     export default {
        mounted() {
@@ -20,7 +20,7 @@ import Examples from "../../3DuF/src/app/examples/jsonExamples"
 
         Registry.viewManager = viewManager;
 
-        viewManager.loadDeviceFromJSON(JSON.parse(Examples.example2));
+        viewManager.loadDeviceFromJSON(JSON.parse(example2));
         viewManager.updateGrid();
         Registry.currentDevice.updateView();
 
